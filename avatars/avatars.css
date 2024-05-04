@@ -1,0 +1,57 @@
+.avatar-row {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.avatar-frame {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.avatar-frame:last-child {
+  margin-right: 0px;
+}
+
+.avatar {
+  width: inherit;
+  height: inherit;
+  border-radius: 32px;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.active {
+  background-color: #4cfe88;
+}
+
+@supports (display: flex) {
+  main {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+  }
+
+  .avatar-row {
+    width: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .avatar-frame {
+    margin-right: 0px;
+  }
+}
