@@ -2,14 +2,6 @@
 
 ## HTML
 
-기본적인 골격은 아래 사진과 같다.
-![대체 텍스트(Alternative Text)](https://ibb.co/qNf8k8m "링크 설명(Title)")
-![이미지입니다!][Image]
-
-[Image]: https://ibb.co/qNf8k8m "골격"
-
-이에 맞춰 코드 구조를 짰다.
-
 ```html
 <main>
   <div class="avatar-row">
