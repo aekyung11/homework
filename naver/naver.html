@@ -1,0 +1,59 @@
+<!-- HTML 마크업을 작성해 주세요 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네이버</title>
+    <link rel="stylesheet" href="./naver.css" />
+  </head>
+  <body>
+    <div class="naver-form">
+      <h1>
+        <img
+          srcset="/naver/logo.svg"
+          src="/naver/logo.png"
+          alt="네이버 로고"
+          class="logo"
+        />
+      </h1>
+      <form action="/" class="login-form">
+        <fieldset>
+          <legend class="sr-only">로그인 폼</legend>
+          <div role="group" class="form-input">
+            <label class="sr-only" for="userId">아이디</label>
+            <input
+              type="text"
+              id="userId"
+              required
+              placeholder="아이디(이메일)"
+              name="userId"
+            />
+          </div>
+          <div role="group" class="form-input">
+            <label class="sr-only" for="userPwd">비밀번호</label>
+            <input
+              type="password"
+              id="userPwd"
+              required
+              placeholder="비밀번호"
+              name="userPwd"
+            />
+          </div>
+          <button type="submit" class="login-button button">로그인</button>
+        </fieldset>
+        <div class="additional-function">
+          <div class="maintain-login-status">
+            <input
+              type="checkbox"
+              id="saveLoginInformation"
+              name="saveLoginInformation"
+            />
+            <label for="saveLoginInformation">로그인 상태 유지</label>
+          </div>
+          <a href="" target="_blank" class="ip-security">IP 보안</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
